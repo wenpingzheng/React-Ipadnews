@@ -1,0 +1,36 @@
+@media all and (max-width:900px){
+	.list-wrap{
+		width:710px;
+	}
+	.list-content .list-item {
+		.pic{
+			height:125px;
+			width:236px;
+		}
+		.pic-wrap{
+			.pic:nth-child(2){
+				margin:0 1px;
+			}
+		}
+		.info{
+			width:454px;
+		}
+	}
+}
+
+@media all and (min-width: 901px){
+	.head-content{
+		height:290px;
+		.float-right{
+			li:nth-child(3){
+				display:block;
+			}
+			li:nth-child(2){
+				border-bottom-color:#ececee;
+			}
+			li{
+				margin-bottom:10px;
+			}
+		}
+	}
+}

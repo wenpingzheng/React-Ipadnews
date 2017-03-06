@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+
+
+
+// common
+
+$base-font-family:"Microsoft YaHei",simsun;
+$base-font-size:16px;
+$base-wrap-width:964px;
+
+
+// nav
+$nav-font-size:16px;      	// 导航字体大小
+$nav-font-color:gray;     	// 导航字体颜色
+$nav-li-width:20%;        	// 导航名称宽度
+$nav-active-color:#00a5e0;  // 导航点击的字体颜色
+
+
+
+// common class value
+
+body {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	font-size:$base-font-size;
+	font-family:$base-font-family;
+}
+
+
+.global{
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+	min-width: 320px;
+	padding: 0 30px;
+
+}
+
+.list-wrap{
+	width:$base-wrap-width;
+	max-width:964px;
+	margin:53px auto 0;
+	position:relative;
+}
+
+.load-wrap{
+	text-align: center;
+	color: gray;
+	margin-top: 300px;
+	font-size: 16px;
+}
+
+.loading{
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	color: gray;
+	margin-bottom:50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

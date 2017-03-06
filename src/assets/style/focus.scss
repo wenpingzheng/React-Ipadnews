@@ -1,0 +1,88 @@
+.head-content{
+	height:200px;
+	width: 100%;
+	border-bottom: .5px solid #ececee;
+	padding: 30px 0;
+	overflow:hidden;
+	ul{
+		position: relative;
+		width:100%;
+		height:100%;
+	};
+	a{
+		width:100%;
+		height:100%;
+		display:block;
+	}
+	.float-left{
+		position: relative;
+		float:left;
+		width:49%;
+		height:100%;
+		display:inline-block;
+		margin-right:5%;
+		li{
+			width:100%;
+			height:100%;
+		}
+		a{
+			background-size:cover;
+		}
+		a::before{
+			position: absolute;
+			content:"";
+			right: 0;
+			bottom: 0;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-image: url(../image/repeatbg.png);
+			background-repeat: repeat-x;
+			background-position: bottom;
+		}
+		.title{
+			position: absolute;
+			left:5%;
+			bottom:18px;
+			color:#fff;
+			width:76%;
+			-webkit-line-clamp: 1;
+			line-clamp: 1;
+		}
+	};
+	.float-left::before{
+		position: absolute;
+		content:"";
+		right: 5%;
+		bottom: 28px;
+		width: 55px;
+		height: 29px;
+		background-image: url(../image/icon-hot.png);
+		background-repeat: no-repeat;
+		-webkit-background-size: cover;
+		background-size: cover;
+		z-index: 2;
+		margin-left: 8px
+	}
+	.float-right{
+		width:46%;
+		height:100%;
+		display:inline-block;
+		li{
+			height:auto;
+			min-height:90px;
+			border-bottom: .5px solid #ececee;
+			margin-bottom:18px;
+		}
+		li:nth-child(2){
+			border-bottom-color:#fff;
+		}
+		li:last-child{
+			border-bottom-color:#fff;
+		}
+		li:nth-child(3){
+			display:none;
+		}
+	};
+}
